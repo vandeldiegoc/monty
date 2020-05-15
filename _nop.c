@@ -1,4 +1,4 @@
-#include "monty.h"
+//#include "monty.h"
 /**
  * _nop - function nothing
  * @stack: stack of nodos.
