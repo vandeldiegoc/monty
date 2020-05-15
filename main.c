@@ -40,6 +40,7 @@ while (getline(&line, &len, opfile) != -1)
 	}
 	tokens = strtok(NULL, "\n \t");
 }
+free(tokens);
 free(line);
 fclose(opfile);
 free_stack(&stack);
