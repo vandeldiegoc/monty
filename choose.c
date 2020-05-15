@@ -13,7 +13,6 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 
 	instruction_t opcode[] = {
 		{"pall", pall},
-		{"nop", _nop}
 
 	};
 
