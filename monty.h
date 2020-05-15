@@ -40,5 +40,6 @@ void push_funtion(char *number, stack_t **stack, unsigned int numline);
 void get_funtion(char *string, stack_t **stack, unsigned int numline);
 int str_is_num(char *str);
 void free_stack(stack_t **head);
+void pint(stack_t **h, unsigned int numline);
 
 #endif
