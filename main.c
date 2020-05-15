@@ -11,7 +11,7 @@ stack_t *stack = NULL;
 unsigned int numline = 0;
 char *line = NULL, *tokens = NULL;
 FILE *opfile;
-size_t len = 0;
+size_t len;
 if (argc != 2)
 {
 	printf("USAGE: monty file\n");
@@ -29,6 +29,7 @@ while (getline(&line, &len, opfile) != -1)
 	numline++;
 	if (tokens[0] == '#')
 		continue;
+
 	if (strcmp(tokens, "push") == 0)
 	{
 		tokens = strtok(NULL, "\n \t");
@@ -38,9 +39,8 @@ while (getline(&line, &len, opfile) != -1)
 	{
 		get_funtion(tokens, &stack, numline);
 	}
-	tokens = strtok(NULL, "\n \t");
 }
-free(tokens);
+
 free(line);
 fclose(opfile);
 free_stack(&stack);

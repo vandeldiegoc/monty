@@ -10,7 +10,6 @@ void push_funtion(char *nr, stack_t **stack, unsigned int numline)
 {
 	stack_t *new = NULL;
 	int number;
-	(void)numline;
 	if (str_is_num(nr) != 0)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", numline);
@@ -18,7 +17,7 @@ void push_funtion(char *nr, stack_t **stack, unsigned int numline)
 	}
 number = atoi(nr);
 new = malloc(sizeof(stack_t));
-	if (new == NULL)
+if (new == NULL)
 	{
 		printf("Error: malloc failed");
 		free_stack(stack);
@@ -28,12 +27,13 @@ new = malloc(sizeof(stack_t));
 	if (*stack == NULL)
 	{
 		(*stack) = new;
+		(*stack)-> next = NULL;
 	}
 	else
 	{
 		(*stack)->prev = new;
 		new->next = *stack;
-		(*stack) = new;
+		*stack = new;
 	}
 }
 
