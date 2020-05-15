@@ -17,7 +17,7 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 	};
 
 
-for (i = 0; i < 3; i++)
+for (i = 0; i < 22; i++)
 {
 		if (strcmp(opc[i].opcode, string) == 0)
 		{
