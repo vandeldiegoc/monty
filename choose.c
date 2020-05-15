@@ -13,11 +13,12 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 
 	instruction_t opc[] = {
 		{"pall", pall},
-		{"pint", pint}
+		{"pint", pint},
+		{"nop", _nop}
 	};
 
 
-for (i = 0; i < 22; i++)
+for (i = 0; i < 3; i++)
 {
 		if (strcmp(opc[i].opcode, string) == 0)
 		{
