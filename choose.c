@@ -24,6 +24,9 @@ for (i = 0; i < 3; i++)
 		return;
 	}
 }
+if (strlen(string) != 0)
+{
 fprintf(stderr, "L%u: unknown instruction %s\n", numline, string);
 exit(EXIT_FAILURE);
+}
 }
