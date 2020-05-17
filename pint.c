@@ -7,12 +7,13 @@
  */
 void pint(stack_t **h, unsigned int numline)
 {
-if (h != NULL || *h != NULL)
+if (*h != NULL || *h != NULL)
 printf("%d\n", (*h)->n);
 
 else
 {
 fprintf(stderr, "L%d: can't pint, stack empty\n", numline);
+free_stack(h);
 exit(EXIT_FAILURE);
 }
 }

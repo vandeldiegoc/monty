@@ -43,5 +43,5 @@ while (getline(&line, &len, opfile) != -1)
 free_stack(&stack);
 fclose(opfile);
 free(line);
-exit(EXIT_FAILURE);
+return (0);
 }

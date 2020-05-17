@@ -43,13 +43,15 @@ new = malloc(sizeof(stack_t));
  * @h: stack of nodos
  * @numline: line number
  */
-void pall(stack_t **h, unsigned int numline)
+void pall(stack_t **stack, unsigned int numline)
 {
-while (*h != NULL)
+stack_t *h;
+h = *stack;
+while (h != NULL)
 {
-printf("%d\n", (*h)->n);
+printf("%d\n", h->n);
 (void)numline;
-(*h) = (*h)->next;
+h = h->next;
 }
 
 }
