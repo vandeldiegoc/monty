@@ -7,6 +7,6 @@
  */
 void _nop(stack_t **stack, unsigned int l)
 {
-	(void) stack;
-	(void) l;
+(void) stack;
+(void) l;
 }
