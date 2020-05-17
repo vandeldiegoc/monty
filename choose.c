@@ -16,15 +16,13 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 		{"pint", pint},
 		{"nop", _nop},
 	};
-
-
 for (i = 0; i < 3; i++)
 {
-		if (strcmp(opc[i].opcode, string) == 0)
-		{
-			opc[i].f(stack, numline);
-			return;
-		}
+	if (strcmp(opc[i].opcode, string) == 0)
+	{
+		opc[i].f(stack, numline);
+		return;
+	}
 }
 fprintf(stderr, "L%u: unknown instruction %s\n", numline, string);
 exit(EXIT_FAILURE);
