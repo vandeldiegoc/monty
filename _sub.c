@@ -11,7 +11,7 @@ unsigned int value;
 
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
-	fprintf(stderr, "L%d: can't add, stack too short\n", numline);
+	fprintf(stderr, "L%d: can't sub, stack too short\n", numline);
 	exit(EXIT_FAILURE);
 	}
 value = ((*stack)->next->n) - ((*stack)->n);
