@@ -39,9 +39,9 @@ while (getline(&line, &len, opfile) != -1)
 	else
 		get_funtion(tokens, &stack, numline);
 	tokens = strtok(NULL, delimit);
+free(line);
 }
 free_stack(&stack);
 fclose(opfile);
-free(line);
 return (0);
 }
