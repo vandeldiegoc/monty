@@ -20,7 +20,7 @@ number = atoi(nr);
 new = malloc(sizeof(stack_t));
 	if (new == NULL)
 	{
-		printf("Error: malloc failed");
+		fprintf(stderr, "Error: malloc failed");
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
@@ -49,7 +49,7 @@ stack_t *h;
 h = *stack;
 while (h != NULL)
 {
-printf("%d\n", h->n);
+fprintf(stdout, "%d\n", h->n);
 (void)numline;
 h = h->next;
 }
