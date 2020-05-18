@@ -11,7 +11,6 @@ void push_funtion(char *nr, stack_t **stack, unsigned int numline)
 	stack_t *new = NULL;
 	int number;
 
-	
 	if (nr == NULL || str_is_num(nr) != 0)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", numline);
@@ -41,7 +40,7 @@ new = malloc(sizeof(stack_t));
 
 /**
  * pall - main funtion
- * @h: stack of nodos
+ * @stack: stack of nodos
  * @numline: line number
  */
 void pall(stack_t **stack, unsigned int numline)
