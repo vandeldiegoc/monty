@@ -15,7 +15,7 @@ size_t len;
 char *delimit = " \t\r\n";
 if (argc != 2)
 {
-	fprintf(stderr, "USAGE: monty file\n");
+	fprintf(stderr, "Usage: monty filename\n");
 	exit(EXIT_FAILURE);
 }
 opfile = fopen(argv[1], "r");
