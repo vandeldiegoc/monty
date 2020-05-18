@@ -43,4 +43,6 @@ void free_stack(stack_t **head);
 void pint(stack_t **h, unsigned int numline);
 void _nop(stack_t **stack, unsigned int l);
 void pop(stack_t **stack, unsigned int numline);
+void swap(stack_t **stack, unsigned int numline);
+
 #endif
