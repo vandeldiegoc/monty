@@ -7,11 +7,9 @@
  */
 void add(stack_t **stack, unsigned int numline)
 {
-stack_t *temp;
 unsigned int value;
-temp = *stack;
 
-	if (temp == NULL || temp->next == NULL)
+	if (*stack == NULL || (*stack)->next == NULL)
 	{
 		fprintf(stderr, "L%i: can't swap, stack too short\n", numline);
 		exit(EXIT_FAILURE);
