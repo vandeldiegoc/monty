@@ -18,6 +18,5 @@ void pop(stack_t **stack, unsigned int numline)
 	pop = *stack;
 	*stack = (*stack)->next;
 	free(pop);
-	(*stack)->prev = NULL;
 
 }
