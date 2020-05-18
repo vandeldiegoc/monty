@@ -25,6 +25,6 @@ for (i = 0; i < 4; i++)
 		return;
 	}
 }
-fprintf(stderr, "L%u: unknown instruction %s\n", numline, string);
+//fprintf(stderr, "L%u: unknown instruction %s\n", numline, string);
 exit(EXIT_FAILURE);
 }
