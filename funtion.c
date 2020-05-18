@@ -11,7 +11,8 @@ void push_funtion(char *nr, stack_t **stack, unsigned int numline)
 	stack_t *new = NULL;
 	int number;
 
-	if (str_is_num(nr) != 0)
+	
+	if (nr == NULL || str_is_num(nr) != 0)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", numline);
 		exit(EXIT_FAILURE);
