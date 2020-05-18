@@ -16,9 +16,10 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 		{"pint", pint},
 		{"nop", _nop},
 		{"pop", pop},
-		{"swap", swap}
+		{"swap", swap},
+		{"add", add}
 	};
-for (i = 0; i < 5; i++)
+for (i = 0; i < 6; i++)
 {
 	if (strcmp(opc[i].opcode, string) == 0)
 	{
