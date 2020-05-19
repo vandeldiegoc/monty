@@ -14,12 +14,12 @@ unsigned int value;
 	fprintf(stderr, "L%d: can't div, stack too short\n", numline);
 	exit(EXIT_FAILURE);
 	}
-	if ((*stack)->n == 0 || ((*stack)->n) < (*stack)->next->n)
+	if ((*stack)->n == 0 || ((*stack)->n) > (*stack)->next->n)
 	{
 	fprintf(stderr, "L%d: division by zero\n", numline);
 	exit(EXIT_FAILURE);
 	}
-value = (((*stack)->n) / (*stack)->next->n);
+value =  (*stack)->next->n / ((*stack)->n);
 (*stack)->next->n = value;
 pop(stack, numline);
 }
