@@ -20,9 +20,10 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 		{"add", add},
 		{"sub", sub},
 		{"div", _div},
-		{"mul", mul}
+		{"mul", mul},
+		{"mod", _mod}
 	};
-for (i = 0; i < 9; i++)
+for (i = 0; i < 11; i++)
 {
 	if (strcmp(opc[i].opcode, string) == 0)
 	{

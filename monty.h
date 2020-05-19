@@ -48,5 +48,6 @@ void add(stack_t **stack, unsigned int numline);
 void sub(stack_t **stack, unsigned int numline);
 void _div(stack_t **stack, unsigned int numline);
 void mul(stack_t **stack, unsigned int numline);
+void _mod(stack_t **stack, unsigned int line_number);
 
 #endif
