@@ -21,9 +21,10 @@ void get_funtion(char *string, stack_t **stack, unsigned int numline)
 		{"sub", sub},
 		{"div", _div},
 		{"mul", mul},
-		{"mod", _mod}
+		{"mod", _mod},
+		{"pchar", _pchar}
 	};
-for (i = 0; i < 11; i++)
+for (i = 0; i < 12; i++)
 {
 	if (strcmp(opc[i].opcode, string) == 0)
 	{
