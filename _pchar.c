@@ -23,7 +23,7 @@ printf("%c\n", number);
 }
 else
 {
-fprintf(stderr, "L%d: can't pint, stack empty\n", numline);
+fprintf(stderr, "L%d: can't pchar, stack empty\n", numline);
 free_stack(h);
 exit(EXIT_FAILURE);
 }
