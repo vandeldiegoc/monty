@@ -11,9 +11,9 @@
 void _pchar(stack_t **h, unsigned int numline)
 {
 int number;
-number = (*h)->n;
 if (*h != NULL || *h != NULL)
 {
+number = (*h)->n;
 if (!isascii(number))
 	{
 fprintf(stderr, "L%u: can't pchar, value out of range\n", numline);
